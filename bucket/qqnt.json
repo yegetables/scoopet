@@ -1,0 +1,38 @@
+{
+    "homepage": "https://im.qq.com/pcqq/index.shtml",
+    "description": "An instant messaging software service developed by Tencent",
+    "license": "Freeware",
+    "version": "9.9.9.240507",
+    "architecture": {
+        "64bit": {
+            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/Windows/QQ_9.9.9_240507_x64_01.exe#/dl.7z",
+            "hash": "3fd2de9ff6e90ac7c31b883d5b365ebf2ca1366bd978c7919ebf2b57d02530ef"
+        },
+        "32bit": {
+            "url": "https://dldir1.qq.com/qqfile/qq/QQNT/Windows/QQ_9.9.9_240507_x86_01.exe#/dl.7z",
+            "hash": "f7ac5cd3d52e26c0d9c0852b2e276e07404482caae8807af8a6f1db5fedb0591"
+        }
+    },
+    "extract_dir": "Files",
+    "shortcuts": [
+        [
+            "QQ.exe",
+            "QQ"
+        ]
+    ],
+    "checkver": {
+        "url": "https://im.qq.com/pcqq",
+        "regex": "QQNT\\\\u002FWindows\\\\u002FQQ_([\\d\\.]+)_([\\d]+)_x86_01\\.exe",
+        "replace": "${1}.${2}"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://dldir1.qq.com/qqfile/qq/QQNT/Windows/QQ_$match1_$match2_x64_01.exe#/dl.7z"
+            },
+            "32bit": {
+                "url": "https://dldir1.qq.com/qqfile/qq/QQNT/Windows/QQ_$match1_$match2_x86_01.exe#/dl.7z"
+            }
+        }
+    }
+}
