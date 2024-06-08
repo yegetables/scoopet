@@ -1,12 +1,12 @@
 {
-    "version": "1.6.0",
+    "version": "1.6.3",
     "description": "简简单单的看直播",
     "homepage": "https://github.com/xiaoyaocz/dart_simple_live",
     "license": {
         "identifier": "GPL-3.0 license",
         "url": "https://github.com/xiaoyaocz/dart_simple_live#GPL-3.0-1-ov-file"
     },
-    "url": "https://github.com/xiaoyaocz/dart_simple_live/releases/download/v1.6.0/simple_live_app-1.6.0+10600-windows.zip",
+    "url": "https://github.com/xiaoyaocz/dart_simple_live/releases/download/v1.6.3/simple_live_app-1.6.3+10603-windows_fixed.zip",
     "installer": {
         "script": [
             "ensure \"$persist_dir\" | Out-Null",
