@@ -10,7 +10,7 @@
     },
     "shortcuts": [
         [
-            "EverythingToolbar.Launcher.exe",
+            "EverythingToolbar/EverythingToolbar.Launcher.exe",
             "EverythingToolbar"
         ]
     ],
