@@ -8,6 +8,12 @@
     "autoupdate": {
         "url": "https://github.com/stnkl/EverythingToolbar/releases/download/$version/EverythingToolbar-$version.msi#/setup.msi_"
     },
+    "shortcuts": [
+        [
+            "EverythingToolbar.Launcher.exe",
+            "EverythingToolbar"
+        ]
+    ],
     "installer": {
         "script": "Start-Process -Wait msiexec \"/i `\"$dir\\setup.msi_`\"/norestart /qn INSTALLFOLDER=`\"$dir`\"\" -Verb RunAs"
     },
