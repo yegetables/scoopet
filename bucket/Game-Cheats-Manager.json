@@ -1,0 +1,28 @@
+{
+    "version": "2.1.0",
+    "description": "",
+    "homepage": "https://github.com/dyang886/Game-Cheats-Manager",
+    "license": "GPL-3.0-only",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/dyang886/Game-Cheats-Manager/releases/download/v2.1.0/Game.Cheats.Manager.Setup.2.1.0.exe"
+        }
+    },
+    "innosetup": true,
+    "bin": "Game Cheats Manager.exe",
+    "shortcuts": [
+        [
+            "Game Cheats Manager.exe",
+            "Game Cheats Manager"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/dyang886/Game-Cheats-Manager"
+    },
+    "autoupdate": {
+        "url": "https://github.com/dyang886/Game-Cheats-Manager/releases/download/v$version/Game.Cheats.Manager.Setup.$version.exe",
+        "hash": {
+            "mode": "download"
+        }
+    }
+}
